@@ -1,2 +1,11 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+
+<% content_for :js do %>
+	<script src="https://cdn.recast.ai/webchat/webchat.js"
+	channelId="255ceefb-ed96-4c74-9cec-09a3bdf5514c"
+	token="c3e522ec8c2a6c8786c5ae483acd37b6"
+	id="recast-webchat"
+	></script>
+<% end %>
