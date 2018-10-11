@@ -42,6 +42,8 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     arel (9.0.0)
     autoprefixer-rails (9.1.4)
       execjs
@@ -56,6 +58,7 @@ GEM
     byebug (10.0.2)
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
+    connection_pool (2.2.2)
     crass (1.0.4)
     devise (4.5.0)
       bcrypt (~> 3.0)
@@ -109,6 +112,7 @@ GEM
       pry (~> 0.10)
     pry-rails (0.3.6)
       pry (>= 0.10.4)
+    public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.5)
     rack-proxy (0.6.5)
@@ -139,10 +143,17 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+    rainbow (3.0.0)
     rake (12.3.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    react_on_rails (11.1.7)
+      addressable
+      connection_pool
+      execjs (~> 2.5)
+      rails (>= 3.2)
+      rainbow (~> 3.0)
     redis (4.0.2)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
@@ -215,6 +226,7 @@ DEPENDENCIES
   pry-rails
   puma
   rails (= 5.2.0)
+  react_on_rails (>= 7.0.4)
   redis
   sass-rails
   simple_form
