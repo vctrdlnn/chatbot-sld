@@ -17,7 +17,6 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
-gem 'react_on_rails', '>= 7.0.4'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
